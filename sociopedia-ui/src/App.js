@@ -1,6 +1,5 @@
 import Dashboard from "./page/Dashboard";
 
-
 function App() {
   return (
     <div className="App">
