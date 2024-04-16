@@ -7,9 +7,7 @@ const LoginPage =  () => {
     document.title = 'Login';
   }, []);
 
-  return (<Box
-    element='span'
-  >
+  return (<Box fontSize='26px' textAlign={'center'}>
      Login 
   </Box>)
 }
