@@ -7,7 +7,10 @@ const LoginPage =  () => {
     document.title = 'Login';
   }, []);
 
-  return (<Box fontSize='26px' textAlign={'center'}>
+  return (<Box 
+    fontSize='32px' 
+    fontWeight={'600'} 
+    textAlign={'center'}>
      Login 
   </Box>)
 }
