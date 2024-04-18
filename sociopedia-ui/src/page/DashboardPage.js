@@ -6,9 +6,12 @@ const DashboardPage = () => {
     document.title ='Dashboard';
   }, [])
 
-  return (<div>
-    Dashboard Page 
-  </div>);
+  return (<Box 
+    fontSize='32px' 
+    fontWeight={'600'} 
+    textAlign={'center'}>
+     Dashboard 
+  </Box>);
 }
 
 export default DashboardPage;
