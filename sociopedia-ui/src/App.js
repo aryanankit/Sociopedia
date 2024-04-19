@@ -4,10 +4,12 @@ import SignupPage from './page/SignupPage';
 import DashboardPage from './page/DashboardPage';
 import LandingPage from './page/LandingPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from './page/Navbar';
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar/>
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/dashboard' element={<DashboardPage />} />

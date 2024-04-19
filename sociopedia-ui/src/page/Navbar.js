@@ -7,14 +7,14 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { MdOutlineMenu } from "react-icons/md";
 
-const DashboardPage = () => {
+const Navbar = () => {
 
   useEffect(() => {
     document.title ='Dashboard';
   }, [])
 
   return (<Box sx={{ flexGrow: 1 }}>
-    <AppBar position="static" color='red'>
+    <AppBar position="static" style={{ backgroundColor:'red' }} >
       <Toolbar>
         <IconButton
           size="large"
@@ -39,4 +39,4 @@ const DashboardPage = () => {
   </Box>);
 }
 
-export default DashboardPage;
+export default Navbar;
