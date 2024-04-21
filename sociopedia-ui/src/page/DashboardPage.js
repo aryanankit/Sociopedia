@@ -26,12 +26,10 @@ const DashboardPage = () => {
           <MdOutlineMenu />
         </IconButton>
         <Typography
-          variant="h6"
-          noWrap
-          component="div"
+          variant="h6"  noWrap  component="div"
           sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
         >
-          Sociopedia
+          Dashboard
         </Typography>
         
       </Toolbar>
