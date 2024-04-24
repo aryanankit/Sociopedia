@@ -17,19 +17,19 @@ const DashboardPage = () => {
     <AppBar position="static" color='red'>
       <Toolbar>
         <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="open drawer"
+          size="large "
+          edge="start "
+          color="inherit "
+          aria-label=" open drawer"
           sx={{ mr: 2 }}
         >
           <MdOutlineMenu />
         </IconButton>
         <Typography
-          variant="h6"  
+          variant="h6 "  
           noWrap  
-          component="div"
-          sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+          component="div "
+          sx={{ flexGrow: 2, display: { xs: 'none', sm: 'block' } }}
         >
           Dashboard
         </Typography>
