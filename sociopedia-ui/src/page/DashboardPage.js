@@ -17,9 +17,9 @@ const DashboardPage = () => {
     <AppBar position="static" color='red'>
       <Toolbar>
         <IconButton
-          size="large "
-          edge="start "
-          color="inherit "
+          size="large"
+          edge="start"
+          color="inherit"
           aria-label=" open drawer"
           sx={{ mr: 2 }}
         >
