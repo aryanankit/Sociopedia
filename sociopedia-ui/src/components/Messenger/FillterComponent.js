@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Box, FormControl, FormGroup, FormControlLabel, Checkbox, Button } from "@mui/material";
-// import './chatbox.css';
 
 const FilterComponent = ({ onApplyFilter }) => {
   const [filters, setFilters] = useState({
