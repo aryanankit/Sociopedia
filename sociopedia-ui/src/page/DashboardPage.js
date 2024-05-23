@@ -21,7 +21,7 @@ const DashboardPage = () => {
           edge="start"
           color="inherit"
           aria-label=" open drawer"
-          sx={{ mr: 2 }}
+          // sx={{ mr: 2 }}
         >
           <MdOutlineMenu />
         </IconButton>
@@ -31,7 +31,7 @@ const DashboardPage = () => {
           component="div "
           sx={{ flexGrow: 2, display: { xs: 'none', sm: 'block' } }}
         >
-          Dashboard
+          Dashboard Page 
         </Typography>
         
       </Toolbar>
