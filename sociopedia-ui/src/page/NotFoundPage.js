@@ -1,10 +1,17 @@
-import { Box } from "@mui/material";
-import React from "react";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './Home'; // Assume you have a Home component
+import NotFound from './NotFound';
 
-const FriendsPage = () => {
-  return (<Box style={{ position: 'relative' , backgroundColor : 'blue', left : '0', bottom: '0', width: '10%', height: '100%' }}>
-    Not found page
-  </Box>)
-}
+const App = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
+  );
+};
 
-export default FriendsPage;
+export default App;
