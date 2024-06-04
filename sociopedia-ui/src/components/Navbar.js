@@ -1,42 +1,33 @@
 import * as React from 'react';
-import { useEffect } from "react";
-import { Box } from "@mui/material";
 import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { MdOutlineMenu } from "react-icons/md";
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
 
-const Navbar = () => {
-
-  useEffect(() => {
-    document.title ='Dashboard';
-  }, [])
-
-  return (<Box sx={{ flexGrow: 1 }}>
-    <AppBar position="static" style={{ backgroundColor:'red' }} >
-      <Toolbar>
-        <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="open drawer"
-          sx={{ mr: 2 }}
-        >
-          <MdOutlineMenu />
-        </IconButton>
-        <Typography
-          variant="h6"
-          noWrap
-          component="div"
-          sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-        >
-          Sociopedia
-        </Typography>
-        
-      </Toolbar>
-    </AppBar>
-  </Box>);
+export default function Navbar() {
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            News
+          </Typography>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
+  );
 }
 
-export default Navbar;
