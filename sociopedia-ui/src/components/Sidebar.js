@@ -13,19 +13,19 @@ const drawerWidth = 240;
 
 const StyledDrawer = styled(Drawer)({
   width: drawerWidth,
-  flexShrink: 0,
-  '& .MuiDrawer-paper': {
-    width: drawerWidth,
-    boxSizing: 'border-box',
-  },
-});
+  flexShrink: 0, 
+  '& .MuiDrawer-paper': { 
+    width: drawerWidth, 
+    boxSizing: 'border-box', 
+  }, 
+}); 
 
-const StyledList = styled(List)({
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
-  height: '100%',
+const StyledList = styled(List)({ 
+  display: 'flex', 
+  flexDirection: 'column', 
+  justifyContent: 'center', 
+  alignItems: 'center', 
+  height: '100%', 
 });
 
 function Sidebar({ children }) {
